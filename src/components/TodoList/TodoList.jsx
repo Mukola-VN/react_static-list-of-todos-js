@@ -2,8 +2,11 @@
 
 import { TodoInfo } from '../TodoInfo/index';
 
-export const TodoList = () => (
+export const TodoList = ({ todos }) => (
   <section className="TodoList">
-    <TodoInfo />
+    {todos.map(todo => (
+      <TodoInfo todo={todo} key={todo.id} />
+    ))}
+    ;
   </section>
 );

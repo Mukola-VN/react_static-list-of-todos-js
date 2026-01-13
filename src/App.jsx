@@ -1,4 +1,5 @@
 import './App.scss';
+
 // імпорт json
 import todosFromServer from './api/todos.json';
 import usersFromServer from './api/users.json';
@@ -20,3 +21,5 @@ export const App = () => (
     <TodoList todos={todos} />
   </div>
 );
+
+

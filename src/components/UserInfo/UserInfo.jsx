@@ -1,3 +1,7 @@
 // Add the required props
 
-export const UserInfo = () => <p>sdf</p>;
+export const UserInfo = ({ user }) => (
+  <a className="UserInfo" href={user.email}>
+    {user.name}
+  </a>
+);
